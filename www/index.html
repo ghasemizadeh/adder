@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+  <title>جمع کردن</title>
+  <link rel="stylesheet" href="css/onsenui.css" />
+  <link rel="stylesheet" href="css/onsen-css-components.min.css" />
+</head>
+
+<body>
+  <ons-page>
+    <ons-toolbar>
+      <div class="center">جمع دو عدد</div>
+    </ons-toolbar>
+    <div style="text-align: center">
+      <p>!لطفا دو عدد را برای جمع وارد کنید</p>
+      <p>
+        <ons-input id="firstNumber" modifier="underbar" placeholder="اولین عدد" float></ons-input>
+      </p>
+      <p>
+        <ons-input id="secondNumber" modifier="underbar" placeholder="دومین عدد" float></ons-input>
+      </p>
+      <p>
+        <ons-button onclick="addNumbers()">جمع</ons-button>
+        &nbsp;&nbsp;&nbsp;
+        <ons-button onclick="clearInputs()">پاکسازی</ons-button>
+      </p>
+    </div>
+    <br>
+  </ons-page>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="js/onsenui.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
